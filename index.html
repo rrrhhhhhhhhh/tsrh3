@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html><head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./resources/css/normalize.css">
+    <link rel="stylesheet" href="./resources/css/style.css">
+    <meta name="ROBOTS" content="INDEX,FOLLOW">
+    <meta name="description" content="t-s-r-h">
+    <title>t-s-r-h</title>
+    <meta property="og:url" content="">
+    <meta property="og:title" content="t-s-r-h">
+    <meta property="og:description" content="t-s-r-h">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="./resources/images/tsrh.ico" />
+
+</head>
+
+
+<body data-new-gr-c-s-check-loaded="14.1026.0" data-gr-ext-installed="" class="card" data-tooltip-container data-tooltip-label="t-s-r-h">
+<a href="menu.html" class="main-link">
+    <div class="container main-link">
+    </a>
+        <div class="left">
+
+          <!-- t-r-s-h -------------------------------------------------->
+          <div class="welcome">
+              <div class="date">&nbsp;</div>
+              <div class="main">
+
+              </div>
+          </div>
+
+
+
+          <video autoplay muted loop class="movie">
+             <source src="./resources/images/welcome.mp4" type="video/mp4">
+          </video>
+
+
+
+
+          </div>
+          </div>
+
+          <script>
+
+          const card = document.querySelector(".card");
+const mainLink = card.querySelector(".main-link");
+const clickableElements = Array.from(card.querySelectorAll("a")); //we are using 'a' here for simplicity but ideally you should put a class like 'clickable' on every clicable element inside card(a, button) and use that in query selector
+
+clickableElements.forEach((ele) =>
+  ele.addEventListener("click", (e) => e.stopPropagation())
+);
+
+function handleClick(event) {
+  const noTextSelected = !window.getSelection().toString();
+
+  if (noTextSelected) {
+    mainLink.click();
+  }
+}
+
+card.addEventListener("click", handleClick);
+
+          </script>
+
+          <script src="./resources/js/tooltip.js"></script>
+          </div>
+          </div>
+</div></div></body><html>
